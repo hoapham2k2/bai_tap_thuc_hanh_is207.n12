@@ -56,37 +56,25 @@
             overflow-wrap: break-word;
         }
 
-        * {
-            font-family: 'Times New Roman', Times, serif;
-        }
-
         .wrapper {}
 
         .wrapper_header {}
 
-        .wrapper_header_logo {}
-
-        hr {
-            width: 50%;
+        .wrapper_header_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
         }
 
         .wrapper_header_title {
-            margin-top: 30px;
+            margin-top: 50px;
             font-style: italic;
-            font-weight: 600;
         }
 
         .wrapper_body {}
 
-        .wrapper_list {
-            list-style-type: upper-roman;
-        }
-
         .wrapper_list_1st {}
-
-        .wrapper_list_wrapper {
-            list-style-type: decimal;
-        }
 
         .wrapper_item {}
 
@@ -96,30 +84,24 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="wrapper text-center">
         <div class="wrapper_header">
-            <a href="https://www.uit.edu.vn/" class="wrapper_header_logo">
+            <div class="wrapper_header_logo">
                 <img src="./assets/img/logo-uit.png" alt="anh_logo_uit" width="200px">
-            </a>
+            </div>
             <h1 class="wrapper_header_title">Trường Đại Học Công Nghệ Thông Tin</h1>
         </div>
         <hr>
         <div class="wrapper_body">
-            <ul class="wrapper_list">
-                <li class="wrapper_list_1st">Danh sách các khoa
-                    <ul class="wrapper_list_wrapper">
-                        <li class="wrapper_item">Khoa Hệ Thống Thông Tin</li>
-                        <li class="wrapper_item">Khoa Mạng Máy Tính và Truyền Thông</li>
-                        <li class="wrapper_item">Khoa Kỹ Thuật Máy Tính</li>
-                    </ul>
-                </li>
-                <li class="wrapper_list_2st">Danh sách các môn
-                    <ul class="wrapper_list_wrapper">
-                        <li class="wrapper_item">Bộ Môn Công Nghệ Thông Tin</li>
-                        <li class="wrapper_item">Bộ Môn Toán Lý</li>
-                        <li class="wrapper_item">Bộ Môn Anh Văn</li>
-                    </ul>
-                </li>
+            <ul class="wrapper_list_1st">Danh sách các khoa
+                <li class="wrapper_item">Khoa Hệ Thống Thông Tin</li>
+                <li class="wrapper_item">Khoa Mạng Máy Tính và Truyền Thông</li>
+                <li class="wrapper_item">Khoa Kỹ Thuật Máy Tính</li>
+            </ul>
+            <ul class="wrapper_list_2st">Danh sách các môn
+                <li class="wrapper_item">Bộ Môn Công Nghệ Thông Tin</li>
+                <li class="wrapper_item">Bộ Môn Toán Lý</li>
+                <li class="wrapper_item">Bộ Môn Anh Văn</li>
             </ul>
         </div>
 </body>
